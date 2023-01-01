@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- leaflet javascript map css -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" 
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" 
+        crossorigin=""/>
+  <!-- leaflet javascript map css end -->
+  <link rel="stylesheet" href="style.css">
+  <title> ip address tracker | frontend mentor </title>
+</head>
+<body>
+  <section class="wrap flex-col body-background">
+    <header class="pos-rel">
+      <h1 class="size-fill">ip address tracker</h1>
+    </header>
+    <form id="form" class="input-container pos-rel">
+      <label for="ip-input">enter an ip address:</label>
+      <input type="text" id="ip-input" aria-label="enter an ip address">
+      <button type="submit" aria-label="track">track</button>
+    </form>
+  </section>
+  <section class="info-container pos-rel">
+    <ul>
+      <li>
+        <h3>ip address</h3>
+        <p id="ip-address">192.212.174.101</p>
+      </li>
+      <li>
+        <h3>location</h3>
+        <p id="location">brooklyn, ny 10001</p>
+      </li>
+      <li>
+        <h3>timezone</h3>
+        <p id="timezone">utc -05:00</p>
+      </li>
+      <li>
+        <h3>isp</h3>
+        <p id="isp">spacex starlink</p>
+      </li>
+    </ul>
+  </section>
+  <section id="map" class="map-container"></section>    
+  <!-- leaflet javascript map js -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" 
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" 
+  crossorigin=""></script>
+  <!-- leaflet javascript map js end -->
+  <script src="main.js"></script>
+</body>
+</html>
